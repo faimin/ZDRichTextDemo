@@ -15,6 +15,8 @@
 		0553EE5B1D5CD68C009F311F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0553EE591D5CD68C009F311F /* LaunchScreen.storyboard */; };
 		0553EE661D5CD68C009F311F /* ZDRichTextDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553EE651D5CD68C009F311F /* ZDRichTextDemoTests.m */; };
 		0553EE711D5CD68C009F311F /* ZDRichTextDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553EE701D5CD68C009F311F /* ZDRichTextDemoUITests.m */; };
+		BC73B3361D61CEB80095A8F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC73B3351D61CEB80095A8F3 /* Images.xcassets */; };
+		BCE519CE1D61A4C000F49AFD /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE519CD1D61A4C000F49AFD /* NotificationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		0553EE6C1D5CD68C009F311F /* ZDRichTextDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDRichTextDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0553EE701D5CD68C009F311F /* ZDRichTextDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDRichTextDemoUITests.m; sourceTree = "<group>"; };
 		0553EE721D5CD68C009F311F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC73B3351D61CEB80095A8F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCE519CC1D61A4C000F49AFD /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		BCE519CD1D61A4C000F49AFD /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +110,11 @@
 				0553EE4F1D5CD68C009F311F /* AppDelegate.m */,
 				0553EE511D5CD68C009F311F /* ViewController.h */,
 				0553EE521D5CD68C009F311F /* ViewController.m */,
+				BCE519CC1D61A4C000F49AFD /* NotificationViewController.h */,
+				BCE519CD1D61A4C000F49AFD /* NotificationViewController.m */,
 				0553EE541D5CD68C009F311F /* Main.storyboard */,
 				0553EE571D5CD68C009F311F /* Assets.xcassets */,
+				BC73B3351D61CEB80095A8F3 /* Images.xcassets */,
 				0553EE591D5CD68C009F311F /* LaunchScreen.storyboard */,
 				0553EE5C1D5CD68C009F311F /* Info.plist */,
 				0553EE4B1D5CD68C009F311F /* Supporting Files */,
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0553EE5B1D5CD68C009F311F /* LaunchScreen.storyboard in Resources */,
+				BC73B3361D61CEB80095A8F3 /* Images.xcassets in Resources */,
 				0553EE581D5CD68C009F311F /* Assets.xcassets in Resources */,
 				0553EE561D5CD68C009F311F /* Main.storyboard in Resources */,
 			);
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0553EE531D5CD68C009F311F /* ViewController.m in Sources */,
+				BCE519CE1D61A4C000F49AFD /* NotificationViewController.m in Sources */,
 				0553EE501D5CD68C009F311F /* AppDelegate.m in Sources */,
 				0553EE4D1D5CD68C009F311F /* main.m in Sources */,
 			);
@@ -415,6 +425,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 36NX5886GJ;
 				INFOPLIST_FILE = ZDRichTextDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -427,6 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 36NX5886GJ;
 				INFOPLIST_FILE = ZDRichTextDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +514,7 @@
 				0553EE771D5CD68C009F311F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0553EE781D5CD68C009F311F /* Build configuration list for PBXNativeTarget "ZDRichTextDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +523,7 @@
 				0553EE7A1D5CD68C009F311F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0553EE7B1D5CD68C009F311F /* Build configuration list for PBXNativeTarget "ZDRichTextDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +532,7 @@
 				0553EE7D1D5CD68C009F311F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
