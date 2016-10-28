@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  ZDCoreTextController.h
 //  ZDRichTextDemo
 //
-//  Created by 符现超 on 16/8/11.
+//  Created by 符现超 on 2016/10/28.
 //  Copyright © 2016年 Zero.D.Saber. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZDCoreTextController : UIViewController
 
 @end
-

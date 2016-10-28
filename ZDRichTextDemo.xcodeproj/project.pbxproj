@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		0553EE4D1D5CD68C009F311F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553EE4C1D5CD68C009F311F /* main.m */; };
 		0553EE501D5CD68C009F311F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553EE4F1D5CD68C009F311F /* AppDelegate.m */; };
-		0553EE531D5CD68C009F311F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553EE521D5CD68C009F311F /* ViewController.m */; };
 		0553EE561D5CD68C009F311F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0553EE541D5CD68C009F311F /* Main.storyboard */; };
 		0553EE581D5CD68C009F311F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0553EE571D5CD68C009F311F /* Assets.xcassets */; };
 		0553EE5B1D5CD68C009F311F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0553EE591D5CD68C009F311F /* LaunchScreen.storyboard */; };
 		0553EE661D5CD68C009F311F /* ZDRichTextDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553EE651D5CD68C009F311F /* ZDRichTextDemoTests.m */; };
 		0553EE711D5CD68C009F311F /* ZDRichTextDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553EE701D5CD68C009F311F /* ZDRichTextDemoUITests.m */; };
+		BC0DBDEA1DC34B6E00FBED4D /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0DBDE71DC34B6E00FBED4D /* NotificationViewController.m */; };
+		BC0DBDEB1DC34B6E00FBED4D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0DBDE91DC34B6E00FBED4D /* FirstViewController.m */; };
+		BC0DBDEE1DC34BD500FBED4D /* ZDCoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0DBDED1DC34BD500FBED4D /* ZDCoreTextController.m */; };
+		BC0DBDF21DC363E200FBED4D /* ZDCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0DBDF11DC363E200FBED4D /* ZDCoreTextView.m */; };
+		BC0DBDF51DC3707B00FBED4D /* hami.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0DBDF41DC3707B00FBED4D /* hami.png */; };
 		BC73B3361D61CEB80095A8F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC73B3351D61CEB80095A8F3 /* Images.xcassets */; };
-		BCE519CE1D61A4C000F49AFD /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE519CD1D61A4C000F49AFD /* NotificationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +44,6 @@
 		0553EE4C1D5CD68C009F311F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0553EE4E1D5CD68C009F311F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0553EE4F1D5CD68C009F311F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0553EE511D5CD68C009F311F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0553EE521D5CD68C009F311F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0553EE551D5CD68C009F311F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0553EE571D5CD68C009F311F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0553EE5A1D5CD68C009F311F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,9 +54,16 @@
 		0553EE6C1D5CD68C009F311F /* ZDRichTextDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDRichTextDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0553EE701D5CD68C009F311F /* ZDRichTextDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDRichTextDemoUITests.m; sourceTree = "<group>"; };
 		0553EE721D5CD68C009F311F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC0DBDE61DC34B6E00FBED4D /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		BC0DBDE71DC34B6E00FBED4D /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		BC0DBDE81DC34B6E00FBED4D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BC0DBDE91DC34B6E00FBED4D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BC0DBDEC1DC34BD500FBED4D /* ZDCoreTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCoreTextController.h; sourceTree = "<group>"; };
+		BC0DBDED1DC34BD500FBED4D /* ZDCoreTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCoreTextController.m; sourceTree = "<group>"; };
+		BC0DBDF01DC363E200FBED4D /* ZDCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCoreTextView.h; sourceTree = "<group>"; };
+		BC0DBDF11DC363E200FBED4D /* ZDCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCoreTextView.m; sourceTree = "<group>"; };
+		BC0DBDF41DC3707B00FBED4D /* hami.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hami.png; sourceTree = "<group>"; };
 		BC73B3351D61CEB80095A8F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BCE519CC1D61A4C000F49AFD /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
-		BCE519CD1D61A4C000F49AFD /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +114,11 @@
 		0553EE4A1D5CD68C009F311F /* ZDRichTextDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC0DBDE51DC34B3000FBED4D /* ViewControllers */,
+				BC0DBDEF1DC363C900FBED4D /* Views */,
+				BC0DBDF31DC3707B00FBED4D /* Sources */,
 				0553EE4E1D5CD68C009F311F /* AppDelegate.h */,
 				0553EE4F1D5CD68C009F311F /* AppDelegate.m */,
-				0553EE511D5CD68C009F311F /* ViewController.h */,
-				0553EE521D5CD68C009F311F /* ViewController.m */,
-				BCE519CC1D61A4C000F49AFD /* NotificationViewController.h */,
-				BCE519CD1D61A4C000F49AFD /* NotificationViewController.m */,
 				0553EE541D5CD68C009F311F /* Main.storyboard */,
 				0553EE571D5CD68C009F311F /* Assets.xcassets */,
 				BC73B3351D61CEB80095A8F3 /* Images.xcassets */,
@@ -146,6 +153,36 @@
 				0553EE721D5CD68C009F311F /* Info.plist */,
 			);
 			path = ZDRichTextDemoUITests;
+			sourceTree = "<group>";
+		};
+		BC0DBDE51DC34B3000FBED4D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC0DBDE81DC34B6E00FBED4D /* FirstViewController.h */,
+				BC0DBDE91DC34B6E00FBED4D /* FirstViewController.m */,
+				BC0DBDEC1DC34BD500FBED4D /* ZDCoreTextController.h */,
+				BC0DBDED1DC34BD500FBED4D /* ZDCoreTextController.m */,
+				BC0DBDE61DC34B6E00FBED4D /* NotificationViewController.h */,
+				BC0DBDE71DC34B6E00FBED4D /* NotificationViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC0DBDEF1DC363C900FBED4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC0DBDF01DC363E200FBED4D /* ZDCoreTextView.h */,
+				BC0DBDF11DC363E200FBED4D /* ZDCoreTextView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC0DBDF31DC3707B00FBED4D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BC0DBDF41DC3707B00FBED4D /* hami.png */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +247,7 @@
 		0553EE401D5CD68B009F311F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZD;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Zero.D.Saber;
 				TargetAttributes = {
@@ -252,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0553EE5B1D5CD68C009F311F /* LaunchScreen.storyboard in Resources */,
+				BC0DBDF51DC3707B00FBED4D /* hami.png in Resources */,
 				BC73B3361D61CEB80095A8F3 /* Images.xcassets in Resources */,
 				0553EE581D5CD68C009F311F /* Assets.xcassets in Resources */,
 				0553EE561D5CD68C009F311F /* Main.storyboard in Resources */,
@@ -279,10 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0553EE531D5CD68C009F311F /* ViewController.m in Sources */,
-				BCE519CE1D61A4C000F49AFD /* NotificationViewController.m in Sources */,
 				0553EE501D5CD68C009F311F /* AppDelegate.m in Sources */,
 				0553EE4D1D5CD68C009F311F /* main.m in Sources */,
+				BC0DBDF21DC363E200FBED4D /* ZDCoreTextView.m in Sources */,
+				BC0DBDEB1DC34B6E00FBED4D /* FirstViewController.m in Sources */,
+				BC0DBDEA1DC34B6E00FBED4D /* NotificationViewController.m in Sources */,
+				BC0DBDEE1DC34BD500FBED4D /* ZDCoreTextController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 36NX5886GJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZDRichTextDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -440,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 36NX5886GJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZDRichTextDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

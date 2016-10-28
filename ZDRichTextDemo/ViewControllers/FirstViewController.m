@@ -6,17 +6,18 @@
 //  Copyright © 2016年 Zero.D.Saber. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 @import CoreText;
 
-@interface ViewController ()
+@interface FirstViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *testLabel;
 
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)dealloc {
+    NSLog(@"%s, %d", __PRETTY_FUNCTION__, __LINE__);
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self notification];
-    [self coretext];
+    [self coreText];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,13 +43,20 @@
 }
 
 // http://www.jianshu.com/p/6db3289fb05d
-- (void)coretext {
+- (void)coreText {
+    // 获取上下文
     CGContextRef content = UIGraphicsGetCurrentContext();
+    // 转换坐标系
     CGContextSetTextMatrix(content, CGAffineTransformIdentity);
     CGContextTranslateCTM(content, 0, self.view.bounds.size.height);
     CGContextScaleCTM(content, 1.0, -1.0);
     
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:@"Coretext学习，处理富文本~~~"];
+    
+    /// 创建CTRunDelegate需要两个参数：
+    /// 一个是callBack结构体，另一个是callBack里的函数调用时需要传入的参数
+    
+    /// callBack结构体主要包含了返回当前CTRun的ascent、descent和width函数
     CTRunDelegateCallbacks callbacks;
     memset(&callbacks, 0, sizeof(CTRunDelegateCallbacks));
     callbacks.version = kCTRunDelegateVersion1;
@@ -68,6 +76,7 @@
     
     CTFramesetterRef frameSetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)attributeString);
     CGMutablePathRef path = CGPathCreateMutable();
+    
     CGPathAddRect(path, NULL, self.view.bounds);
     CTFrameRef frame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, attributeString.length), path, NULL);
     CTFrameDraw(frame, content);
@@ -81,13 +90,13 @@
 }
 
 - (CGRect)calculateImageRectWithFrmae:(CTFrameRef)frame {
-    NSArray *arrLines = (NSArray *)CTFrameGetLines(frame);
-    NSUInteger count = arrLines.count;
+    CFArrayRef arrLines = CTFrameGetLines(frame);
+    NSUInteger count = CFArrayGetCount(arrLines);
     CGPoint points[count];
     CTFrameGetLineOrigins(frame, CFRangeMake(0, 0), points);
     
     for (int i = 0; i < count; i++) {
-        CTLineRef line = (__bridge CTLineRef)arrLines[i];
+        CTLineRef line = (__bridge CTLineRef)((__bridge NSArray *)arrLines)[i];
         NSArray *arrGlyphRun = (NSArray *)CTLineGetGlyphRuns(line);
         
         for (int j = 0; j < arrGlyphRun.count; j++) {
