@@ -7,6 +7,11 @@
 //
 
 #import "NotificationViewController.h"
+#import "ZDCoreTextController.h"
+#import "ZDCoreTextView.h"
+
+#define kScreen_Width   ([UIScreen mainScreen].bounds.size.width)
+#define kScreen_Height  ([UIScreen mainScreen].bounds.size.height)
 
 @interface NotificationViewController ()
 
@@ -14,9 +19,17 @@
 
 @implementation NotificationViewController
 
+- (void)dealloc {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    [self setup];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,6 +41,13 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [[NSNotificationCenter defaultCenter] postNotificationName:@"testNotification" object:[NSThread currentThread] userInfo:nil];
     });
+}
+
+- (void)setup {
+    ZDCoreTextView *ctView = [[ZDCoreTextView alloc] initWithFrame:CGRectMake(20, 170, kScreen_Width - 40, kScreen_Height - 200)];
+    ctView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin;
+    ctView.backgroundColor = UIColor.yellowColor;
+    [self.view addSubview:ctView];
 }
 
 /*

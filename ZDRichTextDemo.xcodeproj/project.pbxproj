@@ -160,10 +160,10 @@
 			children = (
 				BC0DBDE81DC34B6E00FBED4D /* FirstViewController.h */,
 				BC0DBDE91DC34B6E00FBED4D /* FirstViewController.m */,
-				BC0DBDEC1DC34BD500FBED4D /* ZDCoreTextController.h */,
-				BC0DBDED1DC34BD500FBED4D /* ZDCoreTextController.m */,
 				BC0DBDE61DC34B6E00FBED4D /* NotificationViewController.h */,
 				BC0DBDE71DC34B6E00FBED4D /* NotificationViewController.m */,
+				BC0DBDEC1DC34BD500FBED4D /* ZDCoreTextController.h */,
+				BC0DBDED1DC34BD500FBED4D /* ZDCoreTextController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
