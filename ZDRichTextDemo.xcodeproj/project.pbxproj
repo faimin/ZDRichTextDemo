@@ -19,6 +19,7 @@
 		BC0DBDEE1DC34BD500FBED4D /* ZDCoreTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0DBDED1DC34BD500FBED4D /* ZDCoreTextController.m */; };
 		BC0DBDF21DC363E200FBED4D /* ZDCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0DBDF11DC363E200FBED4D /* ZDCoreTextView.m */; };
 		BC0DBDF51DC3707B00FBED4D /* hami.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0DBDF41DC3707B00FBED4D /* hami.png */; };
+		BC52AB981E8CF24200CB26D5 /* ZDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52AB971E8CF24200CB26D5 /* ZDLabel.m */; };
 		BC73B3361D61CEB80095A8F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC73B3351D61CEB80095A8F3 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		BC0DBDF01DC363E200FBED4D /* ZDCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCoreTextView.h; sourceTree = "<group>"; };
 		BC0DBDF11DC363E200FBED4D /* ZDCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCoreTextView.m; sourceTree = "<group>"; };
 		BC0DBDF41DC3707B00FBED4D /* hami.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hami.png; sourceTree = "<group>"; };
+		BC52AB961E8CF24200CB26D5 /* ZDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLabel.h; sourceTree = "<group>"; };
+		BC52AB971E8CF24200CB26D5 /* ZDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLabel.m; sourceTree = "<group>"; };
 		BC73B3351D61CEB80095A8F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +176,8 @@
 			children = (
 				BC0DBDF01DC363E200FBED4D /* ZDCoreTextView.h */,
 				BC0DBDF11DC363E200FBED4D /* ZDCoreTextView.m */,
+				BC52AB961E8CF24200CB26D5 /* ZDLabel.h */,
+				BC52AB971E8CF24200CB26D5 /* ZDLabel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0553EE501D5CD68C009F311F /* AppDelegate.m in Sources */,
+				BC52AB981E8CF24200CB26D5 /* ZDLabel.m in Sources */,
 				0553EE4D1D5CD68C009F311F /* main.m in Sources */,
 				BC0DBDF21DC363E200FBED4D /* ZDCoreTextView.m in Sources */,
 				BC0DBDEB1DC34B6E00FBED4D /* FirstViewController.m in Sources */,
