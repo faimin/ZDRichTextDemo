@@ -2,7 +2,7 @@
 //  NotificationViewController.h
 //  ZDRichTextDemo
 //
-//  Created by 符现超 on 16/8/15.
+//  Created by Zero.D.Saber on 16/8/15.
 //  Copyright © 2016年 Zero.D.Saber. All rights reserved.
 //
 

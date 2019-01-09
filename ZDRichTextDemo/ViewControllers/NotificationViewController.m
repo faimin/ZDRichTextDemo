@@ -2,7 +2,7 @@
 //  NotificationViewController.m
 //  ZDRichTextDemo
 //
-//  Created by 符现超 on 16/8/15.
+//  Created by Zero.D.Saber on 16/8/15.
 //  Copyright © 2016年 Zero.D.Saber. All rights reserved.
 //
 
@@ -44,8 +44,12 @@
 }
 
 - (void)setup {
-    ZDCoreTextView *ctView = [[ZDCoreTextView alloc] initWithFrame:CGRectMake(20, 170, kScreen_Width - 40, kScreen_Height - 200)];
-    ctView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin;
+    CGFloat bottom = 0;
+    if (@available(iOS 11.0, *)) {
+        bottom = self.additionalSafeAreaInsets.bottom ?: 50;
+    }
+    ZDCoreTextView *ctView = [[ZDCoreTextView alloc] initWithFrame:CGRectMake(20, 80, kScreen_Width - 40, kScreen_Height - 80 - bottom)];
+    ctView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     ctView.backgroundColor = UIColor.yellowColor;
     [self.view addSubview:ctView];
 }

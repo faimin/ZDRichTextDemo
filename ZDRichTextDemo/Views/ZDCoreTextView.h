@@ -2,7 +2,7 @@
 //  ZDCoreTextView.h
 //  ZDRichTextDemo
 //
-//  Created by 符现超 on 2016/10/28.
+//  Created by Zero.D.Saber on 2016/10/28.
 //  Copyright © 2016年 Zero.D.Saber. All rights reserved.
 //
 
